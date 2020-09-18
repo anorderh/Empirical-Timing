@@ -1,5 +1,10 @@
+/**
+ * (CS-310 / Program 1 - Empirical Timing) SortedArrayList Class
+ * Class containing implementation of data structure SortedArrayList, an ArrayList always remaining sorted
+ * @author Anthony Norderhaug
+ * @date 9/17/2020
+ */
 import java.util.AbstractList;
-
 
 public class SortedArrayList<E extends Comparable<E>> extends AbstractList {
     E[] baseArray;
@@ -15,11 +20,11 @@ public class SortedArrayList<E extends Comparable<E>> extends AbstractList {
         size = 0;
     }
 
-    public SortedArrayList(int inputSize) {
-        baseArray = (E[]) new Comparable[inputSize];
+    public SortedArrayList(int inputCapacity) {
+        baseArray = (E[]) new Comparable[inputCapacity];
 
-        initialCapacity = inputSize;
-        capacity = inputSize;
+        initialCapacity = inputCapacity;
+        capacity = inputCapacity;
         size = 0;
     }
 
