@@ -31,10 +31,10 @@ public class ArrayDriver {
 
 
         System.out.println("\nTesting Add in order ...");
-        // starting size of 80000 and 7 iterations to depict linear nature of "Add in Order"
+        // starting size of 80000 and 10 iterations to depict linear nature of "Add in Order"
         testSize = 80000;
 
-        for (int i = 1; i <= 7; i++) {
+        for (int i = 1; i <= 10; i++) {
             addCollection = new SortedArrayList<>(testSize);
             currInteger = 0; // Integer used for filling up associated SAL, will be constantly incremented
 
@@ -49,10 +49,10 @@ public class ArrayDriver {
 
 
         System.out.println("\nTesting Add in reverse...");
-        // base starting size and 5 iterations to depict quadratic nature of "Add in Reverse Order"
+        // base starting size and 11 iterations to depict quadratic nature of "Add in Reverse Order"
         testSize = startTestSize;
 
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 11; i++) {
             addReverseCollection = new SortedArrayList<>(testSize);
             currInteger = testSize - 1; // Integer used for filling up associated SAL, will be constantly decremented
 
