@@ -84,7 +84,7 @@ public class SortedArrayList<E extends Comparable<E>> extends AbstractList {
     }
 
     /**
-     * isEmpty() returns a boolean dependent on whether or not class member "size" equals class member "capacity".
+     * isFull() returns a boolean dependent on whether or not class member "size" equals class member "capacity".
      *
      * @return                                              boolean specifying if baseArray is full
      */
